@@ -45,6 +45,8 @@ const searchQueryHandler = (event) => {
     </div>
     
     <ContentWrapper>
+        <div className='parentHeroBanner'>
+
         <div className="heroBannerContent">
             <span className="title">Welcome.</span>
             <span className="subtitle">
@@ -61,6 +63,7 @@ const searchQueryHandler = (event) => {
                 <button>Search</button>
             </div>
         </div>
+                </div>
     </ContentWrapper>
      </div>
 )

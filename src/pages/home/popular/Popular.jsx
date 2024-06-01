@@ -23,13 +23,23 @@ const Popular = () => {
 
   return (
     <div className = "carouselSection">
-      <ContentWrapper>
-        <span className = "carouselTitle">What's Popular</span>
-        <SwitchTabs data = {["Movies" , "TV Shows"]} onTabChange = {onTabChange} />
-      </ContentWrapper>
 
-      <Carousel data = {data?.results} loading = {loading} endpoint = {endpoint}/>
-    </div>
+          <ContentWrapper>
+            <div className='parent_combined'>
+
+            <div className='combined'>
+            <span className = "carouselTitle">What's Popular</span>
+            <span className='dayWeek'>
+            <SwitchTabs data = {["Movies" , "TV Shows"]} onTabChange = {onTabChange} />
+            </span>
+            </div>
+            </div>
+          </ContentWrapper>
+          <div className='movie_section'>
+          
+          <Carousel data = {data?.results} loading = {loading}/>
+          </div>
+        </div>
   )
 }
 

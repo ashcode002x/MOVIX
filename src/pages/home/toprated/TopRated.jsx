@@ -22,14 +22,32 @@ const TopRated = () => {
   }
 
   return (
-    <div className = "carouselSection">
-      <ContentWrapper>
-        <span className = "carouselTitle">Top Rated</span>
-        <SwitchTabs data = {["Movies" , "TV Shows"]} onTabChange = {onTabChange} />
-      </ContentWrapper>
+    // <div className = "carouselSection">
+    //   <ContentWrapper>
+    //     <span className = "carouselTitle">Top Rated</span>
+    //     <SwitchTabs data = {["Movies" , "TV Shows"]} onTabChange = {onTabChange} />
+    //   </ContentWrapper>
 
-      <Carousel data = {data?.results} loading = {loading} endpoint = {endpoint}/>
-    </div>
+    //   <Carousel data = {data?.results} loading = {loading} endpoint = {endpoint}/>
+    // </div>
+    <div className = "carouselSection">
+
+          <ContentWrapper>
+            <div className='parent_combined'>
+
+            <div className='combined'>
+            <span className = "carouselTitle">Top Rated</span>
+            <span className='dayWeek'>
+            <SwitchTabs data = {["Movies" , "TV Shows"]} onTabChange = {onTabChange} />
+            </span>
+            </div>
+            </div>
+          </ContentWrapper>
+          <div className='movie_section'>
+          
+          <Carousel data = {data?.results} loading = {loading}/>
+          </div>
+        </div>
   )
 }
 

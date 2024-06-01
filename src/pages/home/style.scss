@@ -14,3 +14,23 @@
         font-weight: normal;
     }
 }
+.dayWeek{
+    display: flex;
+}
+
+.combined{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+.parent_combined{
+    display: flex;
+    justify-content: center;
+    margin: 18px 80px;
+}
+
+.movie_section{
+    margin: 0 80px;
+
+}

@@ -35,3 +35,18 @@
         }
     }
 }
+.search_parent{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.searchInput{
+    width: 15vw;
+}
+.input_under_search{
+    margin: 0 92px;
+}
+.cross{
+    margin: 0  95px;
+    padding-top: 10px;
+}

@@ -80,9 +80,12 @@ const Header = () => {
     return (
         <header className = {`header ${mobileMenu ? "mobileView" : "" } ${show}`}>
           <ContentWrapper>
+          <div className="my_navbar">
             <span className="logo" onClick = {() => navigate("/")}>
               <img src= {logo} alt="" />
             </span>
+
+            <div className="my_ul">
             <ul className="menuItems">
               <li className="menuItem" onClick = {()=> navigationHandler("movie")}>Movies</li>
 
@@ -92,6 +95,8 @@ const Header = () => {
                 <HiOutlineSearch onClick={openSearch}/>
               </li>
             </ul>
+            </div>
+          </div>
 
             {/* last line "menuItem" was for desktop and now "mobileMenuItem" is for mobiles */}
             <div className="mobileMenuItems">
@@ -103,16 +108,22 @@ const Header = () => {
 
          {showSearch && <div className="searchBar">
             <ContentWrapper>
+              <div className="search_parent">
+
             <div className="searchInput">
                 <input
+                  className="input_under_search"
                     type="text"
                     placeholder="Search for a movie or tv show...."
                     onChange={(e) => setQuery(e.target.value)}
                     onKeyUp={searchQueryHandler}
                     />
                 </div>
+                <div className="cross">
 
                 <VscChromeClose onClick={()=> setShowSearch(false)}/>
+                </div>
+                    </div>
                 
             </ContentWrapper>
 
