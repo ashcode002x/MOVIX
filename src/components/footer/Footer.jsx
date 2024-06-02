@@ -14,6 +14,8 @@ const Footer = () => {
     return (
         <footer className="footer">
             <ContentWrapper>
+                <div className="parent_footer">
+
                 <ul className="menuItems">
                     <li className="menuItem">Terms Of Use</li>
                     <li className="menuItem">Privacy-Policy</li>
@@ -21,6 +23,7 @@ const Footer = () => {
                     <li className="menuItem">Blog</li>
                     <li className="menuItem">FAQ</li>
                 </ul>
+
                 <div className="infoText">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -42,6 +45,7 @@ const Footer = () => {
                     <span className="icon">
                         <FaLinkedin />
                     </span>
+                </div>
                 </div>
             </ContentWrapper>
         </footer>
